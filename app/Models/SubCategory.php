@@ -46,24 +46,6 @@ class SubCategory extends Model
 
 
 
-    public function getActive()
-    {
-        return $this->active == 1 ? 'مفعل' : 'غير مفعل';
-
-    }
-
-
-
-
-    public function getActfive()
-    {
-        return $this->active == 1 ? 'مفعل' : 'غير مفعل';
-
-    }
-
-
-
-
 
 
 
