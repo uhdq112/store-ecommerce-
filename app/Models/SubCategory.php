@@ -1,6 +1,6 @@
 <?php
 // خاص ب الاقسام اللفرعيه
-////hhjdjsd
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
