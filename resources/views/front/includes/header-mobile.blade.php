@@ -1,4 +1,3 @@
-<!-- الصفحه في حق الموقع....  header-mobile كود -->
 
 
 <div class="header-mobile hidden-md-up">

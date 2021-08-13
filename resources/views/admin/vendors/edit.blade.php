@@ -122,7 +122,7 @@
                                                             <input type="text" id="mobile"
                                                                    class="form-control"
                                                                    placeholder="  " name="mobile"
-                                                              value="{{$vendor -> mobile}}"><!-- يرجع يظهر رقم التلفون في شاشه التعديل-->
+                                                              value="{{$vendor -> mobile}}">
 
                                                             @error("mobile")
                                                             <span class="text-danger"> {{$message}}</span>
@@ -135,8 +135,7 @@
                                                             <input type="text" id="email"
                                                                    class="form-control"
                                                                    placeholder="  " name="email"
-                                                                   value="{{$vendor -> email}}"> <!-- يرجع يظهر الايميل في شاشه التعديل-->
-
+                                                                   value="{{$vendor -> email}}">
                                                             @error("email")
                                                             <span class="text-danger"> {{$message}}</span>
                                                             @enderror
@@ -171,7 +170,7 @@
                                                             <input type="text" id="pac-input"
                                                                    class="form-control"
                                                                    placeholder="  " name="address"
-                                                                   value="{{$vendor -> address}}"><!-- يرجع يظهر العنوان في شاشه التعديل-->
+                                                                   value="{{$vendor -> address}}">
 
 
                                                             @error("address")
@@ -261,8 +260,7 @@
             marker = new google.maps.Marker({
                 position: pos,
                 map: map,
-                title: '{{ $vendor->name }}'//  يعرض لي النقطه الحمراء الاسم المسجل في قاعده البينات اخر لوكيشن انحفظ في قاعده البينات
-
+                title: '{{ $vendor->name }}'
             });
 
 

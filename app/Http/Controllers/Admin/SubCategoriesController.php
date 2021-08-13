@@ -17,7 +17,6 @@ class SubCategoriesController   extends Controller
 
 
 
-    //    التصميم تبع  الاقسام  عرض جميع الاقسام الموجوده في الجدول MainCategories داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه الشكل داخل مجلد
 
 
     public function index()
@@ -32,7 +31,6 @@ class SubCategoriesController   extends Controller
 
 
 
-    //    CREAT  التصميم (الشكل))    تصميم ادخل فيه اضافه قسم  فرعي subcategories داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي  (شكل )الصفحه داخل مجلد
 
     public function create()
     {

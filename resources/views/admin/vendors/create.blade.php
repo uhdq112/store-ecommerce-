@@ -84,7 +84,6 @@
                                                 </label>
                                                 @error('logo')
 
-                                                <!--  VendorRequest بملف requests داخل مجلد  controller داخل مجلدhttp  داخل app  تروح علي الفيليديشن الي داخل مجلد   message-->
                                                 <span class="text-danger">{{$message}}</span>
                                                 @enderror
                                             </div>
@@ -301,7 +300,6 @@
 
 @endsection
 
-<!--   admin بملف layouts  الي في مجلد script-->
 @section('script')
 
     <script>
@@ -529,10 +527,7 @@
 
 
     </script>
-    <!--  يجيب الخريطه من قوقل url -->
 
-
-        <!-- المفتاح حق الخريطه تبع مصر-->
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKZAuxH9xTzD2DLY2nKSPKrgRi2_y0ejs&libraries=places&callback=initAutocomplete&language=ar&region=EG
          async defer"></script>

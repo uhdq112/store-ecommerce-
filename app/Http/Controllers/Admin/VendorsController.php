@@ -20,7 +20,6 @@ class VendorsController extends Controller
 {
 
 
-    //    التصميم تبع  التجار  عرض جميع البائعين الموجوده في الجدول Vendors داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه الشكل داخل مجلد
 
 
     public function index()
@@ -34,7 +33,6 @@ class VendorsController extends Controller
 
 
 
-    //    CREAT التصميم (الشكل))    تصميم ادخل فيه اضافه مقدم خدمه جديد تاجر بائع جديد   Vendors داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي  (شكل )الصفحه داخل مجلد
 
     public function create()
     {
@@ -43,12 +41,6 @@ class VendorsController extends Controller
     }
 
 
-
-    // فديو 28
-
-    //    تخزن او تحفض في قاعده البينات INDEX التصميم تبع    Vendors داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
-    //   VendorRequest بملف requests داخل مجلد  controller داخل مجلدhttp  داخل app     استدعاء   الفيليديشن   الي داخل مجلد  VendorRequest
-    //  الشكل form  الي جايي من request
 
 
     public function store(VendorRequest $request)
@@ -61,8 +53,7 @@ class VendorsController extends Controller
                 $request->request->add(['active' => 1]);
 
             $filePath = "";
-            if ($request->has('logo')) { //    vendors  صوره خزنه في جدول  )   logo جايي لك فيه  request اذ
-                //Helpers داخل ملف  Helpers  تروح علي الداله الي هي في مجلد uploadImage
+            if ($request->has('logo')) {
                 $filePath = uploadImage('vendors', $request->logo);
             }
 
@@ -79,7 +70,7 @@ class VendorsController extends Controller
                 'longitude' => $request->longitude,
             ]);
 
-            Notification::send($vendor, new VendorCreated($vendor));//  vendorابعث لل
+            Notification::send($vendor, new VendorCreated($vendor));
 
             return redirect()->route('admin.vendors')->with(['success' => 'تم الحفظ بنجاح']);
 
@@ -98,17 +89,16 @@ class VendorsController extends Controller
 
 
 
-    //   ويعرضه في الصفحه database   التصميم تبع  التعديل علي تاجر يجيب بينات من   Vendors داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
 
     public function edit($id)
     {
         try {
 
-            $vendor = Vendor::Selection()->find($id); //  موجود او لا vendor  يشوف هل
+            $vendor = Vendor::Selection()->find($id);
             if (!$vendor) // اذ مش موجود
                 return redirect()->route('admin.vendors')->with(['error' => 'هذا المتجر غير موجود او ربما يكون محذوفا ']);
 
-            $categories = MainCategory::where('translation_of', 0)->active()->get(); //   edit يجيب الاقسام الرئيسيه ثم يعرض الصفحه الخاصه ب التعديل
+            $categories = MainCategory::where('translation_of', 0)->active()->get();
 
             return view('admin.vendors.edit', compact('vendor', 'categories'));
 
@@ -126,11 +116,6 @@ class VendorsController extends Controller
 
 
 
-
-
-
-    //     التصميم تبع  التحديث  علي قاعده البينات ويسيفه في قاعده البينات  Vendors داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
-    //   VendorRequest بملف requests داخل مجلد  controller داخل مجلدhttp  داخل app     استدعاء   الفيليديشن الي داخل مجلد  VendorRequest
 
     public function update($id, VendorRequest $request)
     {
@@ -186,7 +171,6 @@ class VendorsController extends Controller
 
 
 
-    //   التصميم تبع  الحذف  vendors داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
 
     public function destroy($id)
     {
@@ -199,12 +183,10 @@ class VendorsController extends Controller
 
             $image = Str::after($Vendor->logo, 'assets/');
             $image = base_path('assets/' . $image);
-            unlink($image); //delete from folder// الصورmaincategories حذف الصوره من ملف
+            unlink($image);
 
 
-
-            $Vendor->delete();// احذف ثم رجع  احذف القسم الرئيسي
-
+            $Vendor->delete();
             return redirect()->route('admin.Vendors')->with(['success' => 'تم حذف المتجر بنجاح']);
 
         } catch (\Exception $ex) {
@@ -221,14 +203,13 @@ class VendorsController extends Controller
 
 
 
-    //  /    تخزن في قاعده البينات INDEX التصميم تبع   Vendors داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
 
     public function changeStatus($id)
     {
         try {
             $Vendor = Vendor::find($id);
-            if (!$Vendor)//   مش موجود رجع لي رساله علي الجدول Vendor اذ كان
-                return redirect()->route('admin.Vendors')->with(['error' => 'هذا المتجر غير موجود ']);//   vendorsئ الي هو قروب  admin داخل ملف routes راوت يروح الي مجلد
+            if (!$Vendor)
+                return redirect()->route('admin.Vendors')->with(['error' => 'هذا المتجر غير موجود ']);
 
            $status =  $Vendor -> active  == 0 ? 1 : 0;
 

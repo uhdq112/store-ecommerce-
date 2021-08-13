@@ -16,10 +16,8 @@ class LanguagesController extends Controller
 
 
 
-    //   التصميم تبع  الغات  languages داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
     public function index()
     {
-        //  نعرض اللغات الحاليه الموجوده في قاعده البينات
         $languages = Language::select()->paginate(PAGINATION_COUNT);
 
         return view('admin.languages.index', compact('languages'));
@@ -30,7 +28,6 @@ class LanguagesController extends Controller
 
 
 
-    //    CREAT التصميم (الشكل))    تصميم ادخل فيه اضافه لغه  languages داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي  (شكل )الصفحه داخل مجلد
     public function create()
     {
         return view('admin.languages.create');
@@ -41,7 +38,6 @@ class LanguagesController extends Controller
 
 
 
-    //    تخزن في قاعده البينات INDEX التصميم تبع    languages داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
     public function store(LanguageRequest $request)
     {
         try {
@@ -68,7 +64,6 @@ class LanguagesController extends Controller
 
 
 
-    //   التصميم تبع  التعديل  languages داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
     public function edit($id)
     {
         $language = Language::select()->find($id);
@@ -86,17 +81,15 @@ class LanguagesController extends Controller
 
 
 
-    //     التصميم تبع  التحديث  علي قاعده البينات  languages داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
     public function update($id, LanguageRequest $request)
     {
 
         try {
             $language = Language::find($id);
             if (!$language) {
-                return redirect()->route('admin.languages.edit', $id)->with(['error' => 'هذه اللغة غير موجوده']);// editترجع علي
+                return redirect()->route('admin.languages.edit', $id)->with(['error' => 'هذه اللغة غير موجوده']);
             }
 
-            //  خليه ب0 active مافيش  request لو
             if (!$request->has('active'))
                 $request->request->add(['active' => 0]);
 
@@ -116,14 +109,13 @@ class LanguagesController extends Controller
 
 
 
-    //   التصميم تبع  الحذف  languages داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
     public function destroy($id)
     {
 
         try {
             $language = Language::find($id);
             if (!$language) {
-                return redirect()->route('admin.languages', $id)->with(['error' => 'هذه اللغة غير موجوده']);//ترجع علي الجدول كامل تبع اللغات
+                return redirect()->route('admin.languages', $id)->with(['error' => 'هذه اللغة غير موجوده']);
             }
             $language->delete();
 

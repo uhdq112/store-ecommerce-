@@ -4,18 +4,15 @@
     <div class="main-menu-content">
 
 
-        <!-- تستخدم عندما يكون لدينا قائمه من الاشياء قائمه كامله ul-->
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
 
-            <!-- خاص  ب القائمه الرئيسيه تبع الادمن-->
             <li class="nav-item active"><a href=""><i class="la la-mouse-pointer"></i><span
                  class="menu-title" data-i18n="nav.add_on_drag_drop.main">الرئيسية </span></a>
             </li>
 
 
 
-            <!-- خاص   ب لغات الموقع-->
             <li class="nav-item  open   ">
 
 
@@ -26,10 +23,8 @@
                 </a>
 
 
-                <!-- خاص ب القائمه المنسدله تبع لغات الموقع ul-->
                 <ul class="menu-content">
 
-                    <!--    admin ثم مجلد  route راوت ينادي علي الراوت الي في مجلد  -->
                     <li class="active"><a class="menu-item" href="{{route('admin.languages')}}"
                                           data-i18n="nav.dash.ecommerce"> عرض الكل </a>
                     </li>
@@ -59,12 +54,10 @@
 
 
                 <ul class="menu-content">
-                    <!--    عرض جميع الاقسام admin داخل ملف  routs راوت يوصلني  الي     داخل مجلد  -->
                     <li class="active"><a class="menu-item" href="{{route('admin.maincategories')}}"
                                           data-i18n="nav.dash.ecommerce"> عرض الكل </a>
                     </li>
 
-                    <!--     اضاافه قسم جديد admin داخل ملف    routs راوت يوديني الي   داخل مجلد  -->
 
                     <li><a class="menu-item" href="{{route('admin.maincategories.create')}}" data-i18n="nav.dash.crypto">أضافة
                              قسم جديد </a>
@@ -123,9 +116,7 @@
                     <li class="active"><a class="menu-item" href="{{route('admin.vendors')}}"
                                           data-i18n="nav.dash.ecommerce"> عرض الكل </a>
                     </li>
-                                      <!--   create داخل ملف   vendors داخل مجلد    admin راوت يوديني الي اضافه تاجر جديد  داخل مجلد  -->
 
-                    <!--   vendors داخل مجلد  create توديني الي الرابط تبع  -->
                     <li><a class="menu-item" href="{{route('admin.vendors.create')}}" data-i18n="nav.dash.crypto">أضافة
                             متجر  </a>
                     </li>

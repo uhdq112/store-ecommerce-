@@ -1,4 +1,3 @@
-<!--  اضافه قسم(main)   باالاضافه لكود    layouts  استدعاء الصفحه كامل حق layouts.admin نعمل ربط بمجلد -->
 
 @extends('layouts.admin')
 
@@ -102,7 +101,6 @@
 
                                     <div class="card-body">
 
-                                       <!--   في قاعده البيناتformراوت يخزن جميع مافي -->
                                         <form class="form" action="{{route('admin.maincategories.store')}}"
                                             method="POST"
                                             enctype="multipart/form-data">
@@ -121,7 +119,6 @@
                                                 </label>
 
 
-                                                <!--نعرض الخطاء اذ كان الادخال خاطاء-->
                                                 @error('photo')
                                                 <span class="text-danger">{{$message}}</span>
                                                 @enderror
@@ -145,12 +142,10 @@
                                                         <div class="row">
 
 
-                                                            <!--12 يعني مربع كامل مش نص-->
                                                             <div class="col-md-12">
 
 
                                                                 <div class="form-group">
-                                                                   <!--   messages داخله  ملف  lang داخل مجلد resources  يقراء من مجلد -->
 
                                                                     <label for="projectinput1"> اسم القسم - {{__('messages.'.$lang -> abbr)}} </label>
                                                                     <input type="text" value="" id="name"
@@ -160,7 +155,6 @@
 
                                                                     name="category[{{$index}}][name]">
 
-                                                                    <!--نعرض الخطاء اذ كان الادخال خاطاء-->
                                                                     @error("category.$index.name")
                                                                     <span class="text-danger"> هذا الحقل مطلوب</span>
                                                                     @enderror
@@ -182,7 +176,6 @@
 
                                                                 <div class="form-group">
 
-                                                                   <!--   messages داخله  ملف  lang داخل مجلد resources  يقراء من مجلد -->
 
                                                                     <label for="projectinput1"> أختصار اللغة {{__('messages.'.$lang -> abbr)}} </label>
                                                                     <input type="text" id="abbr"
@@ -227,7 +220,6 @@
                                                                     class="switchery" data-color="success"
                                                                     checked/>
 
-                                                                   <!--   messages داخله  ملف  lang داخل مجلد resources  يقراء من مجلد -->
 
                                                                     <label for="switcheryColor4"
                                                                     class="card-title ml-1">الحالة  {{__('messages.'.$lang -> abbr)}} </label>

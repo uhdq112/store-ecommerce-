@@ -91,8 +91,7 @@
 
 
     <!-- fixed-top-->
-    <!-- nclude داخل مجلد admin داخله مجلد views نعمل استدعاء لهذه الملفات لجلبهن  من مجلد -->
-    @include('admin.includes.header')<!-- //  includes داخل  admin في مجلد header نعمل استدعاء لهذا الملف  الخاص -->
+    @include('admin.includes.header')
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 
     @include('admin.includes.sidebar')
@@ -101,11 +100,10 @@
 
 
 
-   <!-- includesداخل  admin  الصفحه الرئيسيه في مجلد   dashboard نعمل استدعاء (جلب ) لهذا لملف -->
    @yield('content')
 
    <!-- ////////////////////////////////////////////////////////////////////////////-->
-   @include('admin.includes.footer') <!-- //includes داخل  admin في مجلد footer نعمل استدعاء لهذا الملف  الخاص
+   @include('admin.includes.footer')
     -->
 
 
@@ -113,7 +111,6 @@
 
 
 
-    <!-- ثبتنا حزمه تبع الاشعارات -->
     @notify_js
     @notify_render
 

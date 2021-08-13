@@ -12,7 +12,6 @@ class MainCategoryRequest extends FormRequest
      * @return bool
      */
 
-     //الدخول للكل ليس ادمن فقط
     public function authorize()
     {
         return true;
@@ -31,7 +30,6 @@ class MainCategoryRequest extends FormRequest
 
 
 
-    // داله ادخال في  شاشه اضافه قسم
 
     public function rules()
     {

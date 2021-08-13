@@ -1,5 +1,4 @@
 
-<!--   العرض جميع الاقسام(main)   باالاضافه لكود    layouts  استدعاء الصفحه كامل حق layouts.admin نعمل ربط بمجلد -->
 
 @extends('layouts.admin')
 
@@ -116,7 +115,6 @@
 
 
                                                     <tr>
-                                                    <!--  الاشياء المهمه الي سوف تعرض في صفحه عرض  كل الاقسام -->
                                                         <td>{{$category -> name}}</td>
 
                                                         <td>{{$category -> category_id}}</td>
@@ -136,9 +134,7 @@
 
                                                             <div class="btn-group" role="group"
                                                                  aria-label="Basic example">
-                                                                <!-- MainCategoriesController الي داخل ملف edit الراوت هناك يوديني علي الداله    admin  بملف  routes     الراوت هذا عيوصلني الي مجلد -->
 
-                                                                 <!--  راوت الي يعرض لي جدول الاقسام من قاعده البينات ليتم التعديل عليه-->
                                                                 <a href="{{route('admin.maincategories.edit',$category -> id)}}"
                                                                 class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
 
@@ -146,12 +142,10 @@
                                                                 <a href="{{route('admin.maincategories.delete',$category -> id)}}"
                                                                 class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1">حذف</a>
 
-                                                                <!--      MainCategoriesController الي داخل ملف changeStatus الراوت هناك يوديني علي الداله    admin  بملف  routes     الراوت هذا عيوصلني الي مجلد -->
                                                                 <a href="{{route('admin.maincategories.status',$category -> id)}}"
 
                                                                     class="btn btn-outline-warning btn-min-width box-shadow-3 mr-1 mb-1"><!-- لون المربع تبع تغعيل والغاء تفعيلwarning-->
 
-                                                                    <!--   تظهر العكس في الصفحه تبع الاقسام الرئيسيه  اذ كان القسم مفعل يضهر الزر غير مفعل اما اذ كان القسم غير مفعل يضهر الزر  تفعيل-->
                                                                     @if($category -> active == 0)
                                                                         تفعيل
                                                                         @else

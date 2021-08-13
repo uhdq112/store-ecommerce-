@@ -1,11 +1,7 @@
 
- <!-- خاص بالموقع sit  ملف -->
-<!-- begin index.tpl -->
-
 
 <!doctype html>
 
-<!-- // (head- body)من قسمين  html تتكون اي صفحه -->
 <html lang="ar">
 
 
@@ -19,41 +15,30 @@
 
 
 
-<!-- // نضع فيه كل ماتحتاجه لتصميم الصفحه ولاكن المستخدم لايراه بداخل الصفحه -->
 <head>
 
-<!-- وهو المسئول عن اظافه معلومات للصفحه هذه المعلومات لاتظهر للزائر وله العديد من الخصائص   meta  -->
-    <meta charset="utf-8"> <!-- تحديد الترميز الاحرف الخاص بالصفحه  -->
+    <meta charset="utf-8">
 
 
-    <meta http-equiv="x-ua-compatible" content="ie=edge"><!--  يقوم المتصفح باعتماد احدث طريقه لديه لرسم محتوي الصفحه ie اعطاء الاولويبه لاحدث اصدار من  -->
-
-
-
-    <title>موقع ايمحلات</title><!-- عنوان الموقع -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 
 
-    <meta name="description" content="whhwwjjjjjjjjjjjj"><!-- وصف محتوي صفحه المتجر -->
-    <meta name="keywords" content=""><!--وضع كلمات بحث للصفحه-->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes"><!--جعل القياسات الموضوعه تظهر بشكل مناسب على جميع الاجهزه-->
+    <title>موقع ايمحلات</title>
 
 
 
-
-<!--
-// هذه الروابط خاصه بعنوان الموقع
-//طريقه وضع ايقونه بجانب عنوان الموقع
-// النوعtype
-//  مسار الايقونه href -->
+    <meta name="description" content="whhwwjjjjjjjjjjjj">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
 
 
 
 
 
 
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/savemart/img/favicon.ico?1531456858">   <!--  رابط لجلب مسار الا يقونه بجانب عنوان الصفحه -->
-    <link rel="shortcut icon" type="image/x-icon" href="/savemart/img/favicon.ico?1531456858">   <!--   رابط لجلب مسار ايقونه المفظله بجانب عنوان الصفحه رمز الصفحه رمز الموقع رمز الرابط رمز الاختصار -->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/savemart/img/favicon.ico?1531456858">
+    <link rel="shortcut icon" type="image/x-icon" href="/savemart/img/favicon.ico?1531456858">
 
 
 
@@ -62,26 +47,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700,900" rel="stylesheet">
 
-     <!-- css رابط لجلب ملفات -->
-    <link href="http://demo.bestprestashoptheme.com/savemart/themes/vinova_savemart/assets/cache/theme-4527f124.css" type="text/css" media="all" rel="stylesheet" ><!-- css صفحات التنسيق النمطيه  -->
+    <link href="http://demo.bestprestashoptheme.com/savemart/themes/vinova_savemart/assets/cache/theme-4527f124.css" type="text/css" media="all" rel="stylesheet" >
 
 
 
 
-
-
-<!--
-//  js يكون بداخل هذا العنصر اكواد
-// لتظمين سكربت خارجي  او الاشاره الي سكربت قابل للتنفيذ script يستخدم العنصر
-//     اسكربتات دينميكيه تشغيل الزرارت "text/javascript"
-//   javascript تحديد نوع السكربت الذي سيتظمن في المستند هذا الاسكربت بلغه type
-
--->
-<!-- js وتكون قيمته عباره عن اسم ومسار ملف  sec  فاننا نظيف هذا العنصر html في ملف خارجي ونريد نربطه بملف js اذ اردنا كتابه اكواد -->
 
     <script type="text/javascript">
 
-      /*   لتعريف المتغيرات  (سمي هذه المتغيرات بالي ترغب به)واسناد قيمه لهذ المتغير بنفس الوقت  varاستخدام كلمه */
         var added_to_wishlist = "The product was successfully added to your wishlist.";
         var isLogged = false;
         var isLoggedWishlist = false;
@@ -94,7 +67,7 @@
 
 
     <script type="text/javascript">
-        var baseDir = "/savemart/";//نوع المتغير
+        var baseDir = "/savemart/";
         var static_token = "28add935523ef131c8432825597b9928";
     </script>
 
@@ -109,7 +82,6 @@
 
     <!-- end modules/novblockwishlist/novblockwishlist_top.tpl -->
 
-    <!--   تعريف لخصائص النمطstyle -->
     <style type="text/css">
         #main-site
         {background-color: #ffffff;
@@ -144,7 +116,6 @@
 
 
 
-<!-- // نضع فيه كل الاشياء التي سيراه المستخدم بداخل الصفحه -->
 <body id="index" class="lang-ar lang-rtl country-gb currency-gbp layout-full-width page-index tax-display-enabled">
 
 
@@ -161,10 +132,8 @@
 
 
 
-   <!-- //الهدر مقسم الي ثلاث حاجات -->
     <header id="header" class="header-3 sticky-menu">
 
-         <!-- include داخل مجلد from داخله مجلد views نعمل استدعاء لهذه الملفات لجلبهن  من مجلد -->
 
 
          @include('front.includes.header-mobile')
@@ -219,7 +188,6 @@
 
     <div id="wrapper-site">
         <div id="content-wrapper" class="full-width">
-       <!--  //   الصفحه الرئيسيه home نعمل استدعاء (جلب ) لملف -->
               @yield('content')
         </div>
     </div>
@@ -230,7 +198,7 @@
 
 
 
-    @include('front.includes.footer')  <!-- include داخل  front في مجلد header-footer  نعمل استدعاء لهذا الملف  الخاص -->
+    @include('front.includes.footer')
 
 
 <!--
@@ -448,8 +416,6 @@
 
 
 
- <!--   javascript تحديد نوع السكربت الذي سيتظمن في المستند هذا الاسكربت بلغه type-->
-<!-- js وتكون قيمته عباره عن اسم ومسار ملف  sec  فاننا نظيف هذا العنصر html في ملف خارجي ونريد نربطه بملف js اذ اردنا كتابه اكواد -->
 
 <script type="text/javascript" src="http://demo.bestprestashoptheme.com/savemart/themes/vinova_savemart/assets/cache/bottom-3c96ed23.js" ></script>
 

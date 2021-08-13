@@ -1,5 +1,4 @@
 
-<!--  اضافه لغه(main)   باالاضافه لكود    layouts  استدعاء الصفحه كامل حق layouts.admin نعمل ربط بمجلد -->
 @extends('layouts.admin')
 
 @section('content')
@@ -17,11 +16,9 @@
                     <div class="row breadcrumbs-top">
                         <div class="breadcrumb-wrapper col-12">
                             <ol class="breadcrumb">
-                                <!--  adminراوت يظهر الصفحه الرئيسيه  -->
 
                                 <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">الرئيسية </a>
                                 </li>
-                                <!-- راوت يظهر جدول اللغات -->
                                 <li class="breadcrumb-item"><a href="{{route('admin.languages')}}"> أللغات </a>
                                 </li>
                                 <li class="breadcrumb-item active">إضافة لغة
@@ -79,8 +76,6 @@
                                     <div class="card-body">
 
 
-                                        <!-- شكل مربع ابيض داخله العناصر  -->
-                                        <!--  راوت ينادي لي -->
                                         <form class="form" action="{{route('admin.languages.store')}}" method="POST"
                                               enctype="multipart/form-data">
 
@@ -103,7 +98,7 @@
                                                             <input type="text" value="" id="name"
                                                                    class="form-control"
                                                                    placeholder="ادخل اسم اللغة  "
-                                                                   name="name"><!-- اسمه  العمود في قاعده البينات-->
+                                                                   name="name">
                                                             @error('name')
                                                             <span class="text-danger">{{$message}}</span>
                                                             @enderror
@@ -121,7 +116,7 @@
                                                             <input type="text" value="" id="name"
                                                                    class="form-control"
                                                                    placeholder="ادخل أختصار اللغة  "
-                                                                   name="abbr"><!-- اسمه  العمود في قاعده البينات-->
+                                                                   name="abbr">
 
                                                             @error('abbr')
 
@@ -144,7 +139,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="projectinput2"> الاتجاة </label>
-                                                            <select name="direction" class="select2 form-control"><!-- اسمه  العمود في قاعده البينات-->
+                                                            <select name="direction" class="select2 form-control">
                                                                 <optgroup label="من فضلك أختر اتجاه اللغة ">
                                                                     <option value="rtl">من اليمين الي اليسار</option>
                                                                     <option value="ltr">من اليسار الي اليمين</option>

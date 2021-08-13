@@ -1,17 +1,12 @@
- <!--   الصفحه في حق الموقع....  header-top كود -->
 
- <!--  css تحط داخله عناصر كثير  ونقوم بتنسيقهم بواسطه  div -->
 <div class="header-top hidden-sm-down">
-    <div class="container"><!-- وعاء-->
-        <div class="content"><!-- المحتوي-->
-            <div class="row"><!-- صف-->
+    <div class="container">
+        <div class="content">
+            <div class="row">
 
 
 
 
-
-                 <!--  يستخدم لتقسيم الصفحه الي اجزاء بحيث يعرض كل جزاء محتوي معين html هو عنصر div  -->
-                <!--  عبر اسنادهم لفئه معينه   html اسم الفئه يستخدم لتحديد خصائص وتنسيقات لعناصر class  -->
 
 
 
@@ -20,7 +15,6 @@
                     <div class="detail-email d-flex align-items-center justify-content-center">
                         <i class="icon-email"></i>
                         <p>الايميل :  </p>
-                        <!--  css تمييز كلمه وسط مجموعه من الكلام لايحدث له تغيير الا اذ قمنا بتنسيقه بواسطه لغه span -->
                         <span>
                         uhdq112@gmail.com
                         </span>

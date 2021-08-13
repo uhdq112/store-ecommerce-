@@ -1,12 +1,9 @@
-  <!-- (main) home + باالاضافه لكودالسيدربار    layouts  استدعاء الصفحه كامل حق layouts.site نعمل ربط بمجلد -->
 @extends('layouts.site')
 
-  <!-- (main)الصفحه الرئيسيه -->
 @section('content')
     <div id="main">
 
 
-       <!-- السيدربار  العرض الاعلانات للمنتجات -->
         <div id="displayTop" class="displaytopthree">
             <div class="container">
                 <div class="row">

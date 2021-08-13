@@ -1,18 +1,16 @@
-   <!-- الصفحه في حق الموقع....  header-bottom كود -->
 
 
    <!--111111111111111111111111111111111111111111111111111-->
-<div class="header-bottom hidden-sm-down"> <!-- ويكون واضحheader-bottom ضروري من شان يطلع  شكل  -->
+<div class="header-bottom hidden-sm-down">
      <!--2222222222222222222222222222222222222222222222222222222-->
-    <div class="container"><!-- ضروري نعمل وعاء لترتيب الشكل -->
+    <div class="container">
           <!--33333333333333333333333333333333333333333333333333333333333333333333333333-->
-        <div class="row d-flex align-items-center"><!-- الصف محاذه العناصر في الوسط-->
+        <div class="row d-flex align-items-center">
 
 
 
 
 
-           <!--  ( خاص باول   قائمه منسدله ( تسوق حسب الفئات div -->
             <!--444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444-->
             <div class="contentsticky_verticalmenu verticalmenu-main col-lg-3 col-md-1 d-flex" data-textshowmore="Show More" data-textless="Hide" data-desktop_item="4">
 
@@ -27,7 +25,6 @@
 
 
 
-                <!--خاص باول قائمه منسدله-->
 
                 <!--55555555555555555555555555555555555555555555555555555555555555555555555555555555-->
                 <div class="verticalmenu-content has-showmore show">
@@ -53,10 +50,10 @@
 
 
 
-                                <ul class="menu level1"><!--تستخدم عندما يكون لدينا قائمه من الاشياء ul-->
+                                <ul class="menu level1">
 
 
-                                    <li class="item  parent" ><a href="#" title="لاب توبات &amp; مستلزمات "> <!--    ul دئماء يكون داخل عنصر li كل شي يكون داخل عنصر  li -->
+                                    <li class="item  parent" ><a href="#" title="لاب توبات &amp; مستلزمات ">
 
                                             <i class="hasicon nov-icon" style="background:url('http://demo.bestprestashoptheme.com/savemart/themes/vinova_savemart/assets/img/modules/novverticalmenu/icon/laptop.png') no-repeat scroll center center;"></i><!--رابط خارجي لايقونه-->
                                             لاب توبات &amp; مستلزمات </a>
@@ -68,14 +65,13 @@
 
 
 
-                                            <div class="dropdown-menu" style="width:300px"><!-- السطر3433 -->
-                                                <ul><!--تستخدم عندما يكون لدينا قائمه من الاشياء ul-->
-
+                                            <div class="dropdown-menu" style="width:300px">
+                                                <ul>
 
                                                         <li class="item " ><a href="#" title="">   لاب توب dell xps13  </a></li>
 
                                                         <li class="item  parent" ><a href="#" title=""> لاب توب ThankPad</a>
-                                                           <span class="show-sub fa-active-sub"></span><!-- مش ضروري claass-->
+                                                           <span class="show-sub fa-active-sub"></span>
 
 
                                                             <div class="dropdown-menu" >
@@ -133,11 +129,10 @@
                                         <div class="dropdown-menu" style="width:800px">
 
 
-                                            <ul><!--تستخدم عندما يكون لدينا قائمه من الاشياء ul-->
-                                                <li class="item group-list-category-2" > <!-- ضروري يشتغلين الروابط class -->
-                                                    <div class="menu-content"><!--وجوده وعدم وجوده سواء-->
-
-                                                        <div class="row"><!-- ضروري من شان يعملهن جنب بعظ بدل تحن بعض  class -->
+                                            <ul>
+                                                <li class="item group-list-category-2" >
+                                                    <div class="menu-content">
+                                                        <div class="row">
 
 
 
@@ -258,33 +253,23 @@
 
 
 
-
-           <!--   يكون بنفس الصف  div 3  داخل -->
-           <!--    جنب بعض وليس تحته  تكون بجانب تسوق حسب الفئات  داخل الصف    a خاص بترتيب القوئمdiv -->
             <div class="col-lg-9 col-md-11 header-menu d-flex align-items-center justify-content-start">
 
-                <!-- يعمل مربع دائري للقوئم المنسدله بلون الازرق داخل الصفdiv -->
                 <div class="header-menu-search d-flex justify-content-between w-100 align-items-center">
 
-                   <!--وجوده وعدم وجوده سواء-->
                     <div id="_desktop_top_menu">
 
-                        <!--وجوده وعدم وجوده سواء-->
                         <nav id="nov-megamenu" class="clearfix">
-                            <!--  خاص بنزول القاوئم المنسدله  div -->
+
                             <div id="megamenu" class="nov-megamenu clearfix">
 
 
-                                <!-- الاصل حق كل القوئم-->
                                 <ul class="menu level1">
 
-                                    <!-- خاص ب بقائمه الرئيسيه-->
-                                    <li class="item home-page has-sub" >
-                                        <!--وجوده وعدم وجوده سواء-->
+                                  <li class="item home-page has-sub" >
                                         <span class="opener"></span>
                                         <a href="?home" title="Home"><i class="zmdi zmdi-home"></i> الرئيسيه</a>
 
-                                        <!--      تنزل القائمهhome  مجرد ماتضغظ فوق home خاص بنزول ورجوع  القائمه المنسدله حق div -->
                                         <div class="dropdown-menu" style="width:200px">
 
                                             <ul class="">
@@ -303,7 +288,6 @@
 
 
 
-                                    <!-- خاص بقائمه المدونات-->
                                     <li class="item  has-sub" >
                                           <span class="opener"></span>
                                           <a href="#" title="Blog"><i class="zmdi zmdi-library"></i>المدونات</a>
@@ -329,7 +313,6 @@
 
 
 
-                                    <!-- خاص بقائمه الصفحات-->
 
                                     <li class="item menu-page group" >
                                         <span class="opener"></span>
@@ -441,7 +424,6 @@
 
 
 
-                                    <!-- خاص بقائمه الاقسام-->
                                     <li class="item  group" >
                                         <span class="opener"></span>
                                         <a href="http://demo.bestprestashoptheme.com/savemart/ar/2-الصفحة-الرئيسية" title="Categories">
@@ -543,7 +525,6 @@
 
 
                                 </ul>
-                                <!-- الاصل حق كل القوئم-->
 
                             </div>
                         </nav>
@@ -566,7 +547,6 @@
 
 
 
-                     <!-- خاص  بمربع البحث -->
                     <div class="advencesearch_header">
 
                         <span class="toggle-search hidden-lg-up"><i class="zmdi zmdi-search"></i></span>

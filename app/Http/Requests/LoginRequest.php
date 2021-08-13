@@ -24,7 +24,6 @@ class LoginRequest extends FormRequest
 
 
 
-     // داله ادخال في  شاشه الدخول
     public function rules()
     {
         return [
@@ -34,7 +33,6 @@ class LoginRequest extends FormRequest
     }
 
 
-// داله تترجم الرساله الراجعه من شاشه الدخول
     public function messages()
     {
         return [

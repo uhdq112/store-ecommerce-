@@ -82,7 +82,6 @@
                                                 </label>
                                                 @error('photo')
 
-                                                <!--  VendorRequest بملف requests داخل مجلد  controller داخل مجلدhttp  داخل app  تروح علي الفيليديشن الي داخل مجلد   message-->
                                                 <span class="text-danger">{{$message}}</span>
                                                 @enderror
                                             </div>

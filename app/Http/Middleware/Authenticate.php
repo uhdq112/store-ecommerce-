@@ -14,15 +14,13 @@ class Authenticate extends Middleware
      */
 
 
-//   هل هو مستخدم او ادمنlogin  يحدد الداخل من  Authenticate
     protected function redirectTo($request)
     {
         if (!$request->expectsJson()) {
 
-            if (Request::is('admin/*')) //     وبعده اي شي  يدخلك الي صفحه الادمن  (admin) اذ زرت اي رابط
+            if (Request::is('admin/*'))
                 return route('admin.login');
             else
-            //مالم  ذا الراوت خاص ب دخول للموقع
                 return route('login');
 
         }

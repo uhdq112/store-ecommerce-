@@ -16,7 +16,6 @@ class MainCategoriesController extends Controller
 
 
 
-    //    التصميم تبع  الاقسام  عرض جميع الاقسام الموجوده في الجدول MainCategories داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه الشكل داخل مجلد
 
 
     public function index()
@@ -40,7 +39,6 @@ class MainCategoriesController extends Controller
 
 
 
-    //    CREAT التصميم (الشكل))    تصميم ادخل فيه اضافه قسم  maincategories داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي  (شكل )الصفحه داخل مجلد
 
     public function create()
     {
@@ -54,12 +52,10 @@ class MainCategoriesController extends Controller
 
 
 
-    //    تخزن في قاعده البينات INDEX التصميم تبع    maincategories داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
 
 
     public function store(MainCategoryRequest $request)
     {
-// فديو 17 يشرح
         try {
             //return $request;
 
@@ -131,7 +127,6 @@ class MainCategoriesController extends Controller
 
 
 
-    //   ويعرضه في الصفحه database   التصميم تبع  التعديل يجيب بينات من   maincategories داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
 
     public function edit($mainCat_id)
     {
@@ -141,11 +136,10 @@ class MainCategoriesController extends Controller
         ->find($mainCat_id);
 
 
-        // اذ كان مش موجود القسم يرجع هذا القسم مش موجود
         if (!$mainCategory)
         return redirect()->route('admin.maincategories')->with(['error' => 'هذا القسم غير موجود ']);
 
-        return view('admin.maincategories.edit', compact('mainCategory')); //  edit الي هو ملف maincategories داخل مجلد  admin مالم يذهب يعرض  صفحه التعديل الي هي في مجلد
+        return view('admin.maincategories.edit', compact('mainCategory'));
     }
 
 
@@ -160,7 +154,6 @@ class MainCategoriesController extends Controller
 
 
 
-    //     التصميم تبع  التحديث  علي قاعده البينات ويسيفه في قاعده البينات  maincategories داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
 
     public function update($mainCat_id, MainCategoryRequest $request)
     {
@@ -219,7 +212,6 @@ class MainCategoriesController extends Controller
 
 
 
-    //   التصميم تبع  الحذف  maincategories داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
 
 
     public function destroy($id)
@@ -237,11 +229,11 @@ class MainCategoriesController extends Controller
 
             $image = Str::after($maincategory->photo, 'assets/');
             $image = base_path('assets/' . $image);
-            unlink($image); //delete from folder// الصورmaincategories حذف الصوره من ملف
+            unlink($image);
 
-            $maincategory-> maincategories() -> delete(); //امسح الترجمات ثم الي تحته
+            $maincategory-> maincategories() -> delete();
 
-            $maincategory->delete();// احذف ثم رجع  احذف القسم الرئيسي
+            $maincategory->delete();
 
             return redirect()->route('admin.maincategories')->with(['success' => 'تم حذف القسم بنجاح']);
 
@@ -263,7 +255,6 @@ class MainCategoriesController extends Controller
 
 
 
-    //  /    تخزن في قاعده البينات INDEX التصميم تبع   maincategories داخل ملف  admin داخل ملف views  داله وظيفته تنادي علي الصفحه داخل مجلد
 
     public function changeStatus($id)
     {

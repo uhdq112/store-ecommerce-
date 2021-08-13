@@ -98,9 +98,7 @@
                                                             <div class="btn-group" role="group"
 
                                                                  aria-label="Basic example">
-                                                                    <!-- VendorsController الي داخل ملف edit الراوت هناك يوديني علي الداله    admin  بملف  routes     الراوت هذا عيوصلني الي مجلد -->
 
-                                                                 <!--  راوت الي يعرض لي جدول الاقسام من قاعده البينات ليتم التعديل عليه-->
                                                                 <a href="{{route('admin.vendors.edit',$vendor -> id)}}"
                                                                 class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
 
@@ -109,12 +107,10 @@
                                                                 class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1">حذف</a>
 
 
-                                                                <!--      VendorsController الي داخل ملف changeStatus الراوت هناك يوديني علي الداله    admin  بملف  routes     الراوت هذا عيوصلني الي مجلد -->
                                                                 <a href="{{route('admin.vendors.status',$vendor -> id)}}"
 
-                                                                    class="btn btn-outline-warning btn-min-width box-shadow-3 mr-1 mb-1"><!-- لون المربع تبع تغعيل والغاء تفعيلwarning-->
+                                                                    class="btn btn-outline-warning btn-min-width box-shadow-3 mr-1 mb-1">
 
-                                                                    <!--   تظهر العكس في الصفحه تبع الاقسام الرئيسيه  اذ كان القسم مفعل يضهر الزر غير مفعل اما اذ كان القسم غير مفعل يضهر الزر  تفعيل-->
                                                                     @if($vendor -> active == 0)
                                                                         تفعيل
                                                                         @else

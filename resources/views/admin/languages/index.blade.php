@@ -94,8 +94,7 @@
 
                                                                 <a href="{{route('admin.languages.delete',$language -> id)}}"
 
-                                                                class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1">حذف</a><!-- يخلي لون الزر احمرdanger-->
-
+                                                                class="btn btn-outline-danger btn-min-width box-shadow-3 mr-1 mb-1">حذف</a>
 
                                                             </div>
 

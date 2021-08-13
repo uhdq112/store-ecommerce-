@@ -32,7 +32,7 @@ class VendorRequest extends FormRequest
         return [
             'logo' => 'required_without:id|mimes:jpg,jpeg,png',
             'name' => 'required|string|max:100',
-            'mobile' =>'required|max:100|unique:vendors,mobile,'.$this -> id,//  فريد من نوعه لايتشبه ابداءunique
+            'mobile' =>'required|max:100|unique:vendors,mobile,'.$this -> id,
             'email'  => 'required|email|unique:vendors,email,'.$this -> id,
             'category_id'  => 'required|exists:main_categories,id',
             'address'   => 'required|string|max:500',

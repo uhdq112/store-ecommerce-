@@ -1,5 +1,4 @@
 
-<!--  تعديل لغه(main)   باالاضافه لكود    layouts  استدعاء الصفحه كامل حق layouts.admin نعمل ربط بمجلد -->
 
 @extends('layouts.admin')
 
@@ -60,7 +59,6 @@
 
 
 
-                                <!-- عمليه عرض في كل فشل ونجاح-->
                                 @include('admin.includes.alerts.success')
                                 @include('admin.includes.alerts.errors')
 
@@ -168,7 +166,6 @@
 
                                             </div>
 
-                                            <!--   خاص بزر التراجع والتحديثdiv -->
 
                                             <div class="form-actions">
 

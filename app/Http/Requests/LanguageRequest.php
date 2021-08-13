@@ -27,7 +27,6 @@ class LanguageRequest extends FormRequest
 
 
 
-         // داله ادخال في  شاشه اضافه لغه
     public function rules()
     {
         return [
@@ -38,7 +37,6 @@ class LanguageRequest extends FormRequest
         ];
     }
 
-// داله تترجم الرساله الراجعه من  الشكل اظافه لغه
 
     public function messages()
     {

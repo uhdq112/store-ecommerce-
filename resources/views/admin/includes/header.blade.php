@@ -3,13 +3,10 @@
 
     class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light bg-info navbar-shadow">
 
-    <!--  ظهور المربع الازرق كامل -->
     <div class="navbar-wrapper">
 
-        <!--  ظهور المرع الابيض الايمن -->
         <div class="navbar-header">
 
-            <!--تستخدم عندما يكون لدينا قائمه من الاشياء ul-->
             <ul class="nav navbar-nav flex-row">
 
                 <li class="nav-item mobile-menu d-md-none mr-auto">
@@ -22,7 +19,6 @@
 
                 </li>
 
-                <!-- خاص بايقونه مشرف المتجر-->
                 <li class="nav-item">
                     <a class="navbar-brand" href="index.html">
                         <img class="brand-logo" alt="modern admin logo" src="{{asset('assets/admin/images/logo/logo.png')}}">
@@ -58,20 +54,20 @@
 
 
 
-        <!-- ظهور المرع الازرق الايسر -->
+
         <div class="navbar-container content">
 
-            <!--  وجوده وعدم وجوده سواء -->
+
             <div class="collapse navbar-collapse" id="navbar-mobile">
 
 
 
 
 
-                <!--تستخدم عندما يكون لدينا قائمه من الاشياء ul-->
+
                 <ul class="nav navbar-nav mr-auto float-left">
 
-                    <!--خاص بشكل القائمه المنسدله-->
+
                     <li class="nav-item d-none d-md-block">
                         <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#">
                             <i class="ft-menu"></i>
@@ -80,7 +76,6 @@
                     </li>
 
 
-                    <!--خاص بشكل الكامير -->
                     <li class="nav-item d-none d-md-block">
                         <a class="nav-link nav-link-expand" href="#">
                             <i class="ficon ft-maximize"></i>
@@ -100,10 +95,8 @@
 
 
 
-                <!--تستخدم عندما يكون لدينا قائمه من الاشياء ul-->
                 <ul class="nav navbar-nav float-right">
 
-                    <!-- خاص  باسم المبرمج والصوره الرمزيه-->
                     <li class="dropdown dropdown-user nav-item">
 
 
@@ -122,11 +115,9 @@
 
                         </a>
 
-                        <!--قائمه منسدله عند التاشير فوق مرحببا زياد-->
                         <div class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item" href=""><i class="ft-user"></i> تعديل الملف الشحصي </a>
 
-                            <!-- وجوده وعدم وجوده سواء -->
                             <div class="dropdown-divider">
 
                             </div>
@@ -143,7 +134,6 @@
 
 
 
-                    <!-- خاص بايقونه الاشعارات-->
 
                     <li class="dropdown dropdown-notification nav-item">
 
@@ -152,7 +142,6 @@
                             <span class="badge badge-pill badge-default badge-danger badge-default badge-up badge-glow">5</span>
                         </a>
 
-                        <!--تستخدم عندما يكون لدينا قائمه من الاشياء ul-->
                         <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
 
                             <li class="dropdown-menu-header">
@@ -313,7 +302,6 @@
 
 
 
-                    <!-- خاص بايقونه الرسائل-->
                     <li class="dropdown dropdown-notification nav-item">
                         <a class="nav-link nav-link-label" href="#" data-toggle="dropdown">
                             <i class="ficon ft-mail"> </i>

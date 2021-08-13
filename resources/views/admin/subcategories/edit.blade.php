@@ -1,5 +1,4 @@
 
-<!--  تعديل قسم(main)   باالاضافه لكود    layouts  استدعاء الصفحه كامل حق layouts.admin نعمل ربط بمجلد -->
 @extends('layouts.admin')
 
 @section('content')
@@ -66,7 +65,6 @@
                                     </div>
                                 </div>
 
-                               <!--تعرض الرسائل الي فوق الجدول تم بنجاح او تم بفشل-->
 
                                 @include('admin.includes.alerts.success')
                                 @include('admin.includes.alerts.errors')
@@ -93,7 +91,6 @@
 
 
                                             <div class="form-group">
-                                            <!-- يعرض لي الصوره في النص div-->
                                                 <div class="text-center">
                                                     <img
                                                         src="{{$mainCategory -> photo}}"

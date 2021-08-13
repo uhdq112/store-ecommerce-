@@ -1,20 +1,16 @@
-<!-- (main) home  باالاضافه لكود    layouts  استدعاء الصفحه كامل حق layouts.admin نعمل ربط بمجلد -->
 
 @extends('layouts.admin')
 
 @section('content')
-    <!--  ظهور المربع الرئيسي كامل -->
     <div class="app-content content">
 
 
-        <!-- عمليه توسيط القائمه الرئيسيه  -->
         <div class="content-wrapper">
 
 
 
 
 
-            <!--  وجوده وعدم وجوده سواء -->
             <div class="content-header row">
             </div>
 
@@ -22,30 +18,23 @@
 
 
 
-            <!--  ظهور القائمه الرئيسيه كامل -->
             <div class="content-body">
 
-                <!--  ظهور اول مربعات في القائمه الرئيسيه -->
                 <div id="crypto-stats-3" class="row">
 
 
 
 
-                    <!--  ظهور اول مربع شفاف في القائمه الاوله -->
                     <div class="col-xl-4 col-12">
 
-                        <!-- ظهور مربع ابيظ فوق المربع الشفاف  -->
                         <div class="card crypto-card-3 pull-up">
 
 
 
-                            <!--  وجوده وعدم وجوده سواء -->
                             <div class="card-contensat">
 
-                               <!--   عمليه توسيط العناصر في داخل المربع-->
                                 <div class="card-body pb-0">
 
-                                    <!--  وضع العناصر جنب بعض -->
                                     <div class="row">
 
 
@@ -76,9 +65,7 @@
                                 </div>
 
 
-                                <!-- ظهور مربع شفاف داخل المربع الكلي للنسبه   المئويه في اول مربع -->
                                 <div class="row">
-                                    <!--  ظهور النسبه المئويه -->
                                     <div class="col-12">
 
                                         <canvas id="btc-chartjs" class="height-75"></canvas>
@@ -102,24 +89,19 @@
                     </div>
 
 
-                    <!--  ظهور ثاني مربع شفاف في القائمه الاوله -->
                     <div class="col-xl-4 col-12">
 
 
-                        <!-- ظهور مربع ابيظ فوق المربع الشفاف  -->
                         <div class="card crypto-card-3 pull-up">
 
 
 
-                            <!--  وجوده وعدم وجوده سواء -->
                             <div class="card-content">
 
 
-                               <!--   عمليه توسيط العناصر في داخل المربع-->
                                 <div class="card-body pb-0">
 
 
-                                    <!--  وضع العناصر جنب بعض -->
                                     <div class="row">
 
 
@@ -146,9 +128,7 @@
                                 </div>
 
 
-                                <!-- ظهور مربع شفاف داخل المربع الكلي للنسبه   المئويه في ثاني مربع -->
                                 <div class="row">
-                                   <!--  ظهور النسبه المئويه -->
                                     <div class="col-12">
                                         <canvas id="eth-chartjs" class="height-75"></canvas>
                                     </div>
@@ -165,19 +145,14 @@
 
 
 
-                    <!--  ظهور ثالث مربع شفاف في القائمه الاوله -->
                     <div class="col-xl-4 col-12">
 
 
-                        <!-- ظهور مربع ابيظ فوق المربع الشفاف  -->
                         <div class="card crypto-card-3 pull-up">
 
-                            <!--  وجوده وعدم وجوده سواء -->
                             <div class="card-content">
-                                <!--   عمليه توسيط العناصر في داخل المربع-->
-                                <div class="card-body pb-0">
+\                                <div class="card-body pb-0">
 
-                                    <!--  وضع العناصر جنب بعض -->
                                     <div class="row">
 
 
@@ -207,9 +182,7 @@
 
                                 </div>
 
-                                <!-- ظهور مربع شفاف داخل المربع الكلي للنسبه   المئويه في اول مربع -->
                                 <div class="row">
-                                   <!--  ظهور النسبه المئويه -->
                                     <div class="col-12">
                                         <canvas id="xrp-chartjs" class="height-75"></canvas>
                                     </div>
@@ -269,16 +242,13 @@
                 <!-- Sell Orders & Buy Order -->
 
 
-                <!--  ظهور ثاني مربعات في القائمه الرئيسيه -->
                 <div class="row match-height">
 
 
 
-                    <!--  ظهور اول مربع شفاف في القائمه الثانيه -->
                     <div class="col-12 col-xl-6">
 
 
-                        <!-- ظهور مربع ابيظ فوق المربع الشفاف  -->
 
                         <div class="card">
 
@@ -294,7 +264,6 @@
 
 
 
-                            <!--  وجوده وعدم وجوده سواء -->
                             <div class="card-content">
 
 
@@ -392,10 +361,8 @@
 
 
 
-                    <!--  ظهور اول مربع شفاف في القائمه الثانيه -->
                     <div class="col-12 col-xl-6">
 
-                        <!-- ظهور مربع ابيظ فوق المربع الشفاف  -->
                         <div class="card">
 
                             <div class="card-header">
@@ -485,13 +452,10 @@
                 <!-- Active Orders -->
 
 
-                <!--  ظهور ثالث مربعات في القائمه الرئيسيه -->
                 <div class="row">
 
 
-                    <!--  ظهور  مربع شفاف في القائمه الثالثه -->
                     <div class="col-12">
-                        <!-- ظهور مربع ابيظ فوق المربع الشفاف  -->
                         <div class="card">
 
 
@@ -521,7 +485,6 @@
 
                                 <div class="table-responsive">
 
-                                    <!-- عمل جدول -->
                                     <table class="table table-de mb-0">
 
 

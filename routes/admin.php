@@ -1,5 +1,4 @@
-  <!-- (dashbord)خاص بلوحه اعدادت التحكم حق المدير  admin  ملف
-  RouteServiceProvider دخله ملف Providers داخل مجلد app الخاص ( بلوحه اعدادت التحكم حق المدير  ) في مجلد admin نعرف هذا
+
  -->
 <?php
 
@@ -17,15 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 /*
-//    layout نروح الموقع نشوف الصفحه كامل الخاصه ب layout.admin  نزور الرابط  الخاص بالموقع  الي اسمه
-//  layouts داخل مجلد  admin زياره استدعاء الصفحه الرئيسيه
+
 Route::get('/admin', function () {
     return view('layouts.admin');
 });
 */
 
-//    home + layout نروح الموقع نشوف الصفحه الرئيسيه   admin.dashbord   نزور الرابط  الخاص بالموقع  الي اسمه
-//  includes داخل front داخل مجلد  dashboard زياره استدعاء الصفحه الرئيسيه
 
 
 

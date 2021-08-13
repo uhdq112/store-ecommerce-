@@ -1,4 +1,3 @@
-<!-- اسفل الصفحه في حق الموقع  footerكود -->
 <footer class="footer footer-three">
     <div class="inner-footer">
         <div class="container">
@@ -7,20 +6,16 @@
 
 
                 <div class="nov-row footer-top "  data-nov-full-width="true">
-                  <!--وجوده وعدم وجوده سواء-->
                     <div class="nov-row-wrap row">
 
-                        <!--ظهور المرع الازرق-->
                         <div class="nov-modules col-lg-12 col-md-12 ">
 
 
-                            <!--ترتيب جنب بعض-->
                             <div class="block nov-wrap">
 
                                 <div class="title_block">SIGN UP TO NEWSLETTER</div>
 
 
-                                <!--ظهور المرع حق ادخال الايميل-->
 
                                 <div class="block_newsletter">
                                     <form action="http://demo.bestprestashoptheme.com/savemart/ar/#footer" method="post">
@@ -47,7 +42,6 @@
 
 
 
-                                <!--ظهور  الايقونات حق فسبوك -تويتر--يوتيوب-->
                                 <div class="social-content">
                                     <div class="title_block">
                                         Follow us on
@@ -71,7 +65,6 @@
 
 
 
-                                <!--لايظهر في الموقع-->
                                 <!-- Popup newsletter -->
                                 <div id="popup-subscribe" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
@@ -135,15 +128,12 @@
                 </div>
 
 
-                <!--  ظهور المرع الازرق بالكامل على الشاشه-->
                 <div class="nov_row-full-width clearfix w-100">
                 </div>
 
 
-                <!--ظهور المربع الي تحت الازرق-->
                 <div class="nov-row footer-center "  data-nov-full-width="true">
 
-                    <!--ترتيب جنب بعض-->
                     <div class="nov-row-wrap row">
                         <!-- begin /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/novpagemanage/views/source/html.tpl -->
 
@@ -241,7 +231,6 @@
                 </div>
 
 
-                <!--ظهور المرع بالكامل على الشاشه-->
                 <div class="nov_row-full-width clearfix w-100"></div>
 
 
@@ -251,11 +240,8 @@
     </div>
 
 
-    <!-- ظهور اخر مربع في  الشاشه -->
     <div id="nov-copyright">
-        <!-- وعاء-->
         <div class="container">
-             <!-- صف-->
             <div class="row">
                 <div class="col-md-6 align-items-center justify-content-md-start justify-content-sm-center d-flex pb-xs-max-20 flex-center">
                     <span>
